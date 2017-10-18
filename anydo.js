@@ -1,10 +1,24 @@
+
+
 module.exports = function(RED) {
     function anydo(config) {
         RED.nodes.createNode(this,config);
         var node = this;
         node.on('input', function(msg) {
-            msg.payload = msg.payload.toLowerCase();
-            node.send(msg);
+			const anydo = require('anydo')
+
+			const options = {
+			  email: 'sebastien.mathieu.82@gmail.com',
+			  password: '4xbdk6naAE'
+			}
+			anydo(options, (err, result) => {
+			  if (err) throw err
+			  
+			  // get the titles of all your tasks
+			  msg.payload = result.models.task.items
+			  node.send(msg);
+			})
+            
         });
     }
     RED.nodes.registerType("anydo",anydo);
