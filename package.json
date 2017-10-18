@@ -1,0 +1,25 @@
+{
+  "name": "node-red-contrib-anydo",
+  "version": "0.1.0",
+  "description": "Node AnyDo API for node-red",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/petitgen/node-red-contrib-anydo.git"
+  },
+  "keywords": [
+    "Node-RED",
+    "nodes",
+    "anydo",
+    "flow"
+  ],
+  "author": "Sebastien MATHIEU <sebastien.mathieu.82@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/petitgen/node-red-contrib-anydo/issues"
+  },
+  "homepage": "https://github.com/petitgen/node-red-contrib-anydo#readme"
+}
