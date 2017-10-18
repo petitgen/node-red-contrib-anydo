@@ -24,5 +24,10 @@
   "homepage": "https://github.com/petitgen/node-red-contrib-anydo#readme",
   "dependencies": {
     "anydo": "^0.2.1"
+  },
+  "node-red" : {
+    "nodes": {
+        "anydo": "anydo.js"
+    }
   }
 }
